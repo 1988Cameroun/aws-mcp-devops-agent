@@ -35,20 +35,4 @@ Add `ANTHROPIC_API_KEY` and AWS credentials to `.env`, then run:
 python -m aws_mcp_agent.agent
 ```
 
-                +----------------------+
-                |      AI Agent        |
-                | (Claude / LLM)       |
-                +----------+-----------+
-                           |
-                     MCP Protocol
-                           |
-         +-----------------+-----------------+
-         |                                   |
-+-------------------+           +---------------------+
-|  MCP Server       |           |   AWS APIs          |
-|                   |           |                     |
-| list_ec2_instances|---------> | EC2                 |
-| check_iam_roles   |---------> | IAM                 |
-| list_s3_buckets   |---------> | S3                  |
-| describe_vpc_net  |---------> | VPC                 |
-+-------------------+           +---------------------+
+             
