@@ -1,7 +1,7 @@
 ## AWS MCP DevOps Agent
 
 An AI-powered infrastructure agent that uses Anthropic's Model Context 
-Protocol (MCP) to query and report on real AWS infrastructure.
+Protocol (MCP) to analyze real AWS infrastructure and generate infrastructure intelligence reports.
 
 ## What it does
 
@@ -34,3 +34,21 @@ Add `ANTHROPIC_API_KEY` and AWS credentials to `.env`, then run:
 ```bash
 python -m aws_mcp_agent.agent
 ```
+          
+                +----------------------+
+                |      AI Agent        |
+                | (Claude / LLM)       |
+                +----------+-----------+
+                           |
+                     MCP Protocol
+                           |
+         +-----------------+-----------------+
+         |                                   |
++-------------------+           +---------------------+
+|  MCP Server       |           |   AWS APIs          |
+|                   |           |                     |
+| list_ec2_instances|---------> | EC2                 |
+| check_iam_roles   |---------> | IAM                 |
+| list_s3_buckets   |---------> | S3                  |
+| describe_vpc_net  |---------> | VPC                 |
++-------------------+           +---------------------+
