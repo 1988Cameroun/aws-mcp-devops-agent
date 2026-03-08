@@ -24,9 +24,13 @@ real infrastructure rather than simulated environments.
 Python, Anthropic MCP, boto3, AWS (EC2, S3, IAM, VPC)
 
 ## Setup
-bash
+```bash
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-# Add ANTHROPIC_API_KEY and AWS credentials to .env
+```
+
+Add `ANTHROPIC_API_KEY` and AWS credentials to `.env`, then run:
+```bash
 python -m aws_mcp_agent.agent
+```
