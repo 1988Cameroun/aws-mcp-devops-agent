@@ -1,4 +1,4 @@
-## AWS MCP DevOps Agent
+## AWS MCP infrastructure Agent
 
 An AI-powered infrastructure agent that uses Anthropic's Model Context 
 Protocol (MCP) to analyze real AWS infrastructure and generate infrastructure intelligence reports.
