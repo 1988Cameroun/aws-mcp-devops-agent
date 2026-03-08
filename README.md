@@ -34,7 +34,7 @@ Add `ANTHROPIC_API_KEY` and AWS credentials to `.env`, then run:
 ```bash
 python -m aws_mcp_agent.agent
 ```
-          
+
                 +----------------------+
                 |      AI Agent        |
                 | (Claude / LLM)       |
